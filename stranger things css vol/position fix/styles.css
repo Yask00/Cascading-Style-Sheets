@@ -1,0 +1,25 @@
+body,
+pre {
+  margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  margin: 100px;
+}
+
+.moving-box {
+  animation: 3s infinite linear circulate;
+}
+
+.fixed-box {
+  position: fixed;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid green;
+}
+
+@keyframes circulate {
+    from { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
