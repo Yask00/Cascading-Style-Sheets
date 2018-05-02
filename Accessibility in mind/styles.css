@@ -1,0 +1,65 @@
+/* 
+Demos from Manuel Matuzovic: Writing CSS with Accessibility in Mind | CSSConf Budapest 2017
+SLIDES  https://speakerdeck.com/matuzo/designed-for-inclusion-writing-css-with-accessibility-in-mind-1
+VIDEO https://www.youtube.com/watch?v=EOiC2M47GBY&list=PL37ZVnwpeshEif54oBYCQhN8KE-vTWPTi&index=7&t=0s
+*/
+
+/* 
+FONT-SIZE
+Increase default font-size
+18-21px main size
+*/
+
+/*
+LINE-HEIGHT
+mostly default line-height: 1.2
+you should use around 1.5
+*/
+
+/*
+PARAGRAPH WIDTH
+ideally 45-70 charachters per line
+p {
+    max-width: 65ch
+}
+*/
+
+/*
+::BEFORE and ::AFTER
+dont put text in pseudo like this:
+h2::after {
+    content: 'text dsgsdg'; NO
+    content: "\00d7"; YES
+    but hide it from screen reeaders
+    <span aria-hidden="true">
+}
+*/
+
+/*
+COLOR CONTRAST RATIO
+1:1
+1:21 black text white background
+1:4,5 normal text < 24px
+1:3 bold text < 19px
+7:1 ot 4,5:1 Level AAA
+*/
+
+/*
+PRINT web page
+@media print {
+    body > *:not(main) {
+        display: none;
+    }
+    a[hrrf^="http"]:not([href*="mysite.com"])::after {
+        content: "("attr(href)")";
+    }
+}
+*/
+
+/*
+You should not exclude so many people 
+    *:focus {
+        outline: none;
+    }
+    just change focus, not remove outline
+*/
