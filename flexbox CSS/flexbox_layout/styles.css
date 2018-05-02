@@ -7,6 +7,9 @@
 
 .wrapper > * {
     flex: 1 100%;
+    /* === flex-grow: 1
+        flex-basis: 100%;
+    */
     padding: 10px;
 }
 
@@ -25,20 +28,20 @@
 
 .aside-1 {
     background: gold;
-  }
-  
-  .aside-2 {
+}
+
+.aside-2 {
     background: hotpink;
-  }
+}
 
-  @media all and (min-width: 600px) {
+@media all and (min-width: 600px) {
     .aside { flex: 1 auto; }
-  }
+}
 
-  @media all and (min-width: 800px) {
+@media all and (min-width: 800px) {
     .main    { flex: 3 0px; }
     .aside-1 { order: 1; } 
     .main    { order: 2; }
     .aside-2 { order: 3; }
     .footer  { order: 4; }
-  }
+}
