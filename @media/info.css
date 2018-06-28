@@ -1,0 +1,68 @@
+/* CSS Syntax */
+
+/*  
+    @media not|only mediatype and (media feature and|or|not mediafeature) {
+
+    }
+*/
+
+/*---------- OPTIONAL --------*/
+/*
+not:
+    The not keyword reverts the meaning of an entire media query.
+only:
+    The only keyword prevents older browsers that do not support media queries 
+    with media features from applying the specified styles
+and:
+    The and keyword combines a media feature with a media type or other media features
+*/
+
+/*---------- MEDIA TYPES --------*/
+/*
+all
+    Default. Used for all media type devices
+print
+    Used for printers
+screen
+    Used for computer screens, tablets, smartphones etc.
+speech
+    Used for screenreaders that "reads" the page out loud
+*/
+
+/*---------- MEDIA FETURES--------*/
+/*
+min-width
+
+max-width
+
+.......many more
+*/
+
+/*---------- EXAMPLES --------*/
+
+@media screen and (max-width: 600px) {
+    /**/
+}
+
+@media only screen and (orientation: landscape) {
+    /**/
+}
+
+@media screen {
+    body {
+        color: green; 
+    }
+}
+
+@media print {
+    body {
+        color: black; 
+    }
+}
+
+/* When the width is between 600px and 900px OR above 1100px - change the appearance of <div> */
+@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+    div.example {
+
+    }
+}
