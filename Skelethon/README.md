@@ -1,10 +1,10 @@
-# #Simple project skelthon (inluding):
+># Simple project skelthon (inluding):
 
 ## -BOX MODEL
 ## -CSS RESET
 ## -CUSTOMAZABLE BOOTSTRAP GRID SYSTEM
 
-# #HOWTO
+># HOWTO
 
 ## 1. Clone Repository
 ## 2. npm install
