@@ -1,0 +1,22 @@
+
+Structuring Layouts
+    HTML Tables
+    Box Model
+    Flexbox
+    CSS GRID
+Grid - Two dimentional system w ROWS and COLA
+
+DEFINE GRID
+    display: grid
+    display: inline-grid
+COLUMN AND ROWS PROPERTIES
+    grid-template-columns: 20px 50% auto repeat(3, 15%)
+    grid-template-rows: 1fr 1.5fr
+CHILD CONTAINERS (implicit number or explicit name or span or auto)
+    grid-column-start
+    grid-column-end
+    grid-row-start
+    grid-row-end
+GRID TEMPLATE AREAS
+    grid-template-area
+    grid-area /* on child */
