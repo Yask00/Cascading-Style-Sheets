@@ -26,20 +26,20 @@ CHILD
 
 NAMING CHILD - PARENT
 
-        grid-template-areas:
-                'header header header header header header'
-                'menu main main main right right'
-                'menu footer footer footer footer footer';
+    grid-template-areas:
+            'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
 NAMING CHILD - CHILD
 
-        grid-area: menu;
-        grid-area: main;
+    grid-area: menu;
+    grid-area: main;
     
 ORDER CHILD - PARENT
 
-        grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
 
 ORDER CHILD - CHILD
 
-        grid-area: 1 / span 3 / 2 / 1;  // grid-row-start, grid-column-start, grid-row-end and the grid-column-end
-        grid-area: 3 / 3 / 4 / 4;
+    grid-area: 1 / span 3 / 2 / 1;  // grid-row-start, grid-column-startgrid-row-end and the grid-column-end
+    grid-area: 3 / 3 / 4 / 4;
