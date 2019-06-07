@@ -42,6 +42,7 @@ header {
     background-color: #41c7c7;
     display: grid;
     grid-template-columns: [logo-start] fit-content(20%) [nav-start] auto [nav-end]; 
+    grid-area: head;
     /* implicit names 1 and 2 explicit names logo-start and nav-start/end */
 }
 section#hero {
@@ -51,6 +52,7 @@ section#hero {
 
     display: grid;
     grid-template-columns: repeat(2, auto);
+    grid-area: hero;
 }
 #content h1 {
     text-transform: uppercase;
@@ -77,8 +79,13 @@ img {
 }
 .main {
     grid-area: right;
-    grid-template-rows: 51px fit-content(30%) 40%;
+    grid-template-rows: 51px fit-content(30%) 40% auto;
     display: grid;
+    grid-template-areas: 
+        "head"
+        "hero"
+        "inventions"
+        "features"
     /* grid-template-columns: 800px;
     justify-content: center; */
 }
@@ -91,6 +98,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(5, auto);
     text-align: center;
+    grid-area: features;
     /* align-items: center; */
 }
 #features i {
@@ -137,9 +145,40 @@ section#info {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     align-items: space-around;
+    grid-area: inventions;
 }
 
 #mountain-vector {
     width: 200px;
     align-self: center;
+}
+
+@media screen and (max-width: 60em){
+    .sidebar {
+        display: none;
+    }
+
+    body {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "right"
+            "footer";
+    }
+
+    .main {
+        grid-template-areas: 
+            "head"
+            "hero"
+            "features"
+            "inventions";
+    }
+
+    #features {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    ul#features li:nth-child(5) {
+        grid-column: 1 / span 2;
+    }
 }
