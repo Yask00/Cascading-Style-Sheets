@@ -4,7 +4,7 @@ Structuring Layouts
     Box Model
     Flexbox
     CSS GRID
-Grid - Two dimentional system w ROWS and COLA
+Grid - Two dimentional system w ROWS and COLS
 
 DEFINE GRID
     display: grid
