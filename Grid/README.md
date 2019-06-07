@@ -1,4 +1,5 @@
 PARENT
+
     display: grid/inline-grid;
 
     grid-template-columns: auto auto auto;
@@ -12,6 +13,7 @@ PARENT
     align-content: -||-
 
 CHILD
+
     grid-column-start: 1; // from 1
     grid-column-end: 3; // up to 3
     grid-row-start: 1;
@@ -22,19 +24,22 @@ CHILD
 
     grid-area: 1 / 2 / 5 / 6; // grid-row-start, grid-column-start, grid-row-end and the grid-column-end
 
-NAMING CHILD
-    PARENT
+NAMING CHILD - PARENT
+
         grid-template-areas:
                 'header header header header header header'
                 'menu main main main right right'
                 'menu footer footer footer footer footer';
-    CHILD
+NAMING CHILD - CHILD
+
         grid-area: menu;
         grid-area: main;
     
-ORDER CHILD
-    PARENT
+ORDER CHILD - PARENT
+
         grid-template-columns: auto auto auto;
-    CHILD
+
+ORDER CHILD - CHILD
+
         grid-area: 1 / span 3 / 2 / 1;  // grid-row-start, grid-column-start, grid-row-end and the grid-column-end
         grid-area: 3 / 3 / 4 / 4;
