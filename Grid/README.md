@@ -2,7 +2,9 @@ PARENT
 
     display: grid/inline-grid;
 
+    3x3
     grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
 
     grid-column-gap: 50px;
     grid-row-gap: 50px;
