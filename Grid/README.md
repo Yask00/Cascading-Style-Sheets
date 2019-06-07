@@ -11,6 +11,7 @@ PARENT
 
     justify-content: space-evenly/space-around/space-between/center/start/end
     align-content: -||-
+    align-items: start/end/center/strech
 
 CHILD
 
@@ -24,6 +25,7 @@ CHILD
 
     grid-area: 1 / 2 / 5 / 6; // grid-row-start, grid-column-start, grid-row-end and the grid-column-end
 
+    align-self: start/end/center/strech
 NAMING CHILD - PARENT
 
     grid-template-areas:
