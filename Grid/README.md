@@ -3,8 +3,10 @@ PARENT
     display: grid/inline-grid;
 
     3x3
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto; // rem/em/%/fr/repeat(2, 10px)
+    grid-template-rows: auto auto auto; // -||-
+    grid-auto-columns: 10px; /* No matter how many columns of content end up in the grid, each column will be this same width */
+    grid-auto-rows: 1rem; /* No matter how many rows of content end up in the grid, each row will be this same height */
 
     grid-column-gap: 50px;
     grid-row-gap: 50px;
@@ -13,7 +15,9 @@ PARENT
 
     justify-content: space-evenly/space-around/space-between/center/start/end
     align-content: -||-
-    align-items: start/end/center/strech
+
+    align-items: start/end/center/strech // Vertical
+    justify-items: -||- // Horizontal
 
 CHILD
 
@@ -28,12 +32,15 @@ CHILD
     grid-area: 1 / 2 / 5 / 6; // grid-row-start, grid-column-start, grid-row-end and the grid-column-end
 
     align-self: start/end/center/strech
+    justify-self: -||-
+
 NAMING CHILD - PARENT
 
     grid-template-areas:
             'header header header header header header'
             'menu main main main right right'
             'menu footer footer footer footer footer';
+
 NAMING CHILD - CHILD
 
     grid-area: menu;
