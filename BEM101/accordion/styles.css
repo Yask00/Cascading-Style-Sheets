@@ -1,43 +1,43 @@
 .accordion {
-    background: #f4f4f4;
-    font-family: "Raleway", sans-serif;
-    margin: 4rem auto;
-    max-width: 600px;
-    width: 90%;
+  background: #f4f4f4;
+  font-family: "Raleway", sans-serif;
+  margin: 4rem auto;
+  max-width: 600px;
+  width: 90%;
 }
 
-  .accordion__title {
-    background: #5B5F97;
-    color: white;
-    cursor: pointer;
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    margin: 0;
-    padding: 1rem 1.5rem;
-    text-transform: uppercase;
-    transition: .3s ease;
-}
-
-
-  .accordion__title:hover {
-    background: #484b77;
+.accordion__title {
+  background: #5B5F97;
+  color: white;
+  cursor: pointer;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  transition: .3s ease;
 }
 
 
-  .accordion__copy {
-    color: gray;
-    display: none;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.6;
-    margin: 0;
-    padding: 1rem 1.5rem 2rem 1.5rem;
+.accordion__title:hover {
+  background: #484b77;
 }
 
-  .accordion__copy--open {
-    display: block;
+
+.accordion__copy {
+  color: gray;
+  display: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+  padding: 1rem 1.5rem 2rem 1.5rem;
 }
 
-  body {
-    background: #222;
+.accordion__copy--open {
+  display: block;
+}
+
+body {
+  background: #222;
 }

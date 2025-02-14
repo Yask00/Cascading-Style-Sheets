@@ -3,12 +3,13 @@
 body, html {
     height: 100%;
 }
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     display: grid;
-    grid-template-rows: auto 50px;
-    grid-template-columns: 12% auto;
+    grid-template-rows: auto 50px; /* footer 50px above auto */
+    grid-template-columns: 12% auto; /* sidebar 12% of width  right auto*/
     grid-template-areas:
         "sidebar right"
         "footer footer";
@@ -41,8 +42,8 @@ ul li a {
 header {
     background-color: #41c7c7;
     display: grid;
-    grid-template-columns: [logo-start] fit-content(20%) [nav-start] auto [nav-end]; 
-    grid-area: head;
+    grid-template-columns: [logo-start] fit-content(20%) [nav-start] auto [nav-end]; /* 20% logo vs rest nav */
+    grid-area: head; /* giving it name to be used in mian */
     /* implicit names 1 and 2 explicit names logo-start and nav-start/end */
 }
 section#hero {
@@ -79,7 +80,7 @@ img {
 }
 .main {
     grid-area: right;
-    grid-template-rows: 51px fit-content(30%) 40% auto;
+    grid-template-rows: 51px fit-content(30%) 40% auto; /* top to bottom main: nav #hero ... footer */
     display: grid;
     grid-template-areas: 
         "head"

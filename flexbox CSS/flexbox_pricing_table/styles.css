@@ -86,7 +86,7 @@
     .flex-item {
       flex: 0 0 100%;
       margin-bottom: 1em;
-      width: 100%; /* maybe unnecessary */
+      /* width: 100%; maybe unnecessary */
     }
   
     .package:hover {
