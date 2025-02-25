@@ -60,10 +60,10 @@
 * container has 
     * `flex-flow`(flex-direction and flex-wrap), 
     * `justify-content` along main axis, 
-    * `align-content` - combo `align-items` and `justify-content` (center/start items on cross axis), 
+    * `align-content` - combo `align-items` and `justify-content` (center/start items on cross axis). The align-content property is used on multi-line flex-containers. 
     * `align-items` along cross axis
 * items have `order`, `flex`, `align-self`
-    * `order` - e.g. fourth element into the first: `order: 0` is default => `order: 1` to end or `order: -1` to start
+    * `order` - e.g. fourth element into the first: `order: 0` is default => `order: 1` to end or `order: -1` to start. The items are still arranged from lowest to highest order value
     * `align-self` - element positioned in relation to the cross axis.
     * `flex` - is combo of 
         * `flex-grow` (default 0) - if 1 grows to maximum free space
@@ -71,6 +71,7 @@
         * `flex-basis` - will override width property
 * automatically applied to display flex: `flex-direction` (main axis) and `flex-wrap`
 * Applying the `z-index`  to `flex-items` (so the elements inside of the flex-container) will change the order of these items even if no position  property was applied.
+* `Absolute` flex-items have their widths based solely on flex, while `relative` flex items have their widths based on content size.
 
 ### Section 14 Grid
 * display `grid` turns element into grid `container` - `2 dimensional` vs `flex` `one dimention`
