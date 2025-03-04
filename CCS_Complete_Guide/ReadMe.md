@@ -22,6 +22,7 @@
 
 * with `float` you get your element out of the flow- great for positioning image and text but not for block level element
 * `id` has higher specifity then `class` or `element`
+    * `Inline` style > `id` > `class` & `pseudo class` > `attributes` > `Elements` and `pseudo-elements`
 * `!important` overwrites following/down the code styles on element
 
 ### Section 6 Positioning
